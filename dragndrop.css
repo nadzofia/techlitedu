@@ -1,0 +1,225 @@
+body {
+    background-image: linear-gradient(rgb(251, 221, 174,0.55), rgb(33, 23, 56)), url("images/dragndropbg.jpeg");
+    color: white;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f4a340;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f4a340;
+}
+
+nav{
+  display: flex;
+  padding: 0 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 220px;
+  margin-left: 50px;
+  margin-top: -25px;
+}
+
+.nav-links{
+   flex: 1;
+   text-align: right;
+}
+
+.nav-links ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position:relative;
+}
+
+.nav-links ul li a{
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+   font-family: Righteous, sans-serif;
+}
+
+.nav-links ul li a.active{
+  color: #402200;
+}
+
+.nav-links ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: #220c0b;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+   content: '';
+   width: 100%;
+   height: 2px;
+   background: #ff8c09;
+   display: block;
+   margin: auto;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+  }
+  
+
+  h1, h3, p {
+    color: white;
+    text-align: center;
+    font-family: Josefin Sans, sans-serif;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+  
+  .draggable-list {
+    padding: 5px;
+  }
+  
+.dragndropli {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: #aa82e3;
+    border: 1px solid #b0bec5;
+    color: #fefefe;
+    cursor: grab;
+    font-family: Kanit, sans-serif;
+  }
+  
+  .over {
+    background-color: #edb48f;
+  }
+  
+  
+  table {
+    padding: 10px;
+    margin: 15px;
+    align-items: center;
+    /* border: 1px solid #b0bec5; */
+  }
+  
+  th, td {
+    padding: 10px 10px;
+    text-align: center;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    font-family: Josefin Sans, sans-serif;
+  }
+  
+  table tr {
+    padding: 20px;
+  }
+
+  td {
+    border: 1px solid #2c192d;
+    align-items: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #130e18;
+  }
+  
+  #dragndropbt {
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #607d8b;
+    color: #fff;
+  }
+  
+  #dragndropbt:hover {
+    background-color: #516a75;
+  }
+  
+
+  #endMessage{
+    display: none;
+    max-width: 960px;
+    margin-left: 350px;
+    align-items: center;
+    text-align: center;
+  }
+
+  button a{
+    text-decoration: none;
+    color: white;
+    font-family: Josefin Sans, sans-serif;
+  }
+
+  button {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4c4053;
+    border-radius: 1rem;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.2s;
+    font-family: Josefin Sans, sans-serif;
+  }
+  
+  button:hover{
+    background-color: #af71b2;
+    color: #000000;
+    transform: scale(1.1);
+  }
+
+  button a:hover{
+    background-color: #af71b2;
+    color: #000000;
+    transform: scale(1.1);
+  }
+
+  /*------------ FOOTER ------*/
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer p{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-family: Josefin Sans, sans-serif;
+}
+
+#indexbackg{
+  background-image: linear-gradient(rgb(251, 221, 174), rgb(149, 95, 54));
+  color: white;
+  padding-top: 5%;
+}
+  
